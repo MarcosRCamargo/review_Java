@@ -20,7 +20,8 @@ public class Pizza {
     }
    public void adicionaIngrediente(String nome_ingrediente){
        contabilizaIngrediente();
-       Map<String, String> ingrediente = new HashMap<String, Int>();
+       Map<String, String> ingrediente = new HashMap<String, String>();
+       ingrediente.put("1", new String(nome_ingrediente));
    }
     void contabilizaIngrediente(){
         intredientes += 1;
