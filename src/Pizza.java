@@ -18,12 +18,16 @@ public class Pizza {
             preco = 23;
         }
     }
+    int contabilizaIngrediente(){
+        intredientes += 1;
+        return intredientes;
+    }
    public void adicionaIngrediente(String nome_ingrediente){
        contabilizaIngrediente();
+       int n_ing = contabilizaIngrediente();
        Map<String, String> ingrediente = new HashMap<String, String>();
-       ingrediente.put("1", new String(nome_ingrediente));
+       String ingredient_n =  String.valueOf(n_ing);
+       ingrediente.put(ingredient_n, new String(nome_ingrediente));
    }
-    void contabilizaIngrediente(){
-        intredientes += 1;
-    }
+
 }
